@@ -24,7 +24,7 @@ int main() {
     int size = sizeof(array)/sizeof(array[0]);
     
     //create a hash table
-    int hashTable[11] = {0};
+    int hashTable[11] = {0};     //only can store upto 10^6 elements for 10^7 elements we need to use unordered_map or use the array outside the  main function
     while(size--){
         hashTable[array[size]]++;
     }
