@@ -4,11 +4,17 @@ using namespace std;
 
 void Insertion_Sort(vector<int> &arr,int pointer){
     //base case
-    if(arr[pointer]>=arr[pointer-1]){
-        return;
+    if(arr[pointer-1]<=arr[pointer] ||pointer<=0){
+        pointer++;
+        if(pointer>=arr.size()){
+            return;
+        }
+        return Insertion_Sort(arr,pointer);
     }
     //recursive case
-    
+    swap(arr[pointer],arr[pointer-1]);
+    Insertion_Sort(arr,pointer-1);  
+
     
 // 54321
 // 45321
