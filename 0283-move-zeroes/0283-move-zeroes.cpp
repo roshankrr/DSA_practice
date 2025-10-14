@@ -7,10 +7,12 @@ public:
             if(nums[s]==0 and nums[y]==0){
                 y++;
                 }
-            else if(nums[s]==0 and nums[y]!=0){
-            swap(nums[s],nums[y]);
-            s++;
-            y++;
+            else{
+                if(nums[s]==0){
+                swap(nums[s],nums[y]);
+                }
+                s++;
+                y++;
             }
             // for(auto it:nums){
             //     cout<<it<<" ";
