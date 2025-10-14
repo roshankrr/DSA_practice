@@ -1,28 +1,32 @@
 class Solution {
 public:
-    vector<int> asteroidCollision(vector<int>& asteroids) {
-    stack<int> st;
-    for (int a : asteroids) {
-        bool alive = true;
-        // Collision only possible if a < 0 and stack top > 0
-        while (alive && !st.empty() && st.top() > 0 && a < 0) {
-            if (st.top() < -a) {
+    vector<int> asteroidCollision(vector<int>& arr) {
+    int size=arr.size();
+    vector<int>ans;
+    stack<int>st;
+    for(int i=0;i<size;i++){
+        int alive=1;
+        while(!st.empty() and st.top()>0 and arr[i]<0){
+            if(st.top()< -arr[i]){
                 st.pop();
                 continue;
-            } else if (st.top() == -a) {
+            }
+            else if(st.top()== -arr[i]){
                 st.pop();
             }
-            alive = false;
+            alive=0;
+            break;
         }
-        if (alive) st.push(a); // Only push survivor
+        if(alive==1){
+            st.push(arr[i]);
+        }
     }
-    vector<int> result;
-    while (!st.empty()) {
-        result.push_back(st.top());
+    while(!st.empty()){
+        int top=st.top();
         st.pop();
+        ans.push_back(top);
     }
-    reverse(result.begin(), result.end());
-    return result;
-}
-
+    reverse(ans.begin(),ans.end());
+    return ans;
+    }
 };
