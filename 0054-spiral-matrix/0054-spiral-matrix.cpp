@@ -1,34 +1,48 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int rowstart=0,colstart=0,colend=matrix[0].size()-1,rowend=matrix.size()-1;
         vector<int>ans;
-        while(colstart<=colend and rowstart<=rowend){
-            for(int i = colstart; i <= colend; i++) {
-                ans.push_back(matrix[rowstart][i]);
-            }
-            rowstart++;
-
-            for(int i=rowstart;i<=rowend;i++){
-                ans.push_back(matrix[i][colend]);
-            }
-            colend--;
-
-            if(rowstart<=rowend){
-                for(int i=colend;i>=colstart;i--){
-                ans.push_back(matrix[rowend][i]);
+        int left=0,right,top=0,bottom;
+        right=matrix[0].size()-1;
+        bottom=matrix.size()-1;
+        /*
+        1=left--right
+        2=top--bottom
+        3=right--left
+        4=bottom--top
+        */
+        int direction=1;
+        while(top<=bottom && left<=right){
+            switch(direction){
+                case 1:
+                for(int x=left;x<=right;x++){
+                    ans.push_back(matrix[top][x]);
                 }
-                rowend--;
-
-            }
-
-            if(colstart<=colend){
-                for(int i=rowend;i>=rowstart;i--){
-                    ans.push_back(matrix[i][colstart]);
+                top++;
+                direction=2;
+                break;
+                case 2:
+                for(int x=top;x<=bottom;x++){
+                    ans.push_back(matrix[x][right]);
                 }
-                colstart++;
+                right--;
+                direction=3;
+                break;
+                case 3:
+                for(int x=right;x>=left;x--){
+                    ans.push_back(matrix[bottom][x]);
+                }
+                bottom--;
+                direction=4;
+                break;
+                case 4:
+                for(int x=bottom;x>=top;x--){
+                    ans.push_back(matrix[x][left]);
+                }
+                direction=1;
+                left++;
+                break;
             }
-
         }
         return ans;
     }
