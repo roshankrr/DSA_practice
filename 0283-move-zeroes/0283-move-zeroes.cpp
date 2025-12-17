@@ -1,25 +1,12 @@
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int size=nums.size();
-        int s=0,y=1;
-        for(int i=0;i<size-1;i++){
-            if(nums[s]==0 and nums[y]==0){
-                y++;
-                }
-            else{
-                if(nums[s]==0){
-                swap(nums[s],nums[y]);
-                }
-                s++;
-                y++;
-            }
-            // for(auto it:nums){
-            //     cout<<it<<" ";
-            // }
-            // cout<<endl;
+        int lastNonZeroFoundAt = 0;
+    // Move all non-zero elements to the front
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] != 0) {
+            swap(nums[lastNonZeroFoundAt++], nums[i]);
         }
-        // 1 0 0 3 12
-
+    }
     }
 };
