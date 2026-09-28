@@ -45,4 +45,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0611-valid-triangle-number](https://github.com/roshankrr/DSA_practice/tree/main/0611-valid-triangle-number/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0007-reverse-integer](https://github.com/roshankrr/DSA_practice/tree/main/0007-reverse-integer/) | Medium |
 <!---LeetCode Topics End-->
