@@ -49,4 +49,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0007-reverse-integer](https://github.com/roshankrr/DSA_practice/tree/main/0007-reverse-integer/) | Medium |
+| [0507-perfect-number](https://github.com/roshankrr/DSA_practice/tree/main/0507-perfect-number/) | Easy |
 <!---LeetCode Topics End-->
