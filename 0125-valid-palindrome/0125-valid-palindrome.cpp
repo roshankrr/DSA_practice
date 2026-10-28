@@ -1,24 +1,18 @@
 class Solution {
 public:
-    bool isPalindrome(string s) {
-        transform(s.begin(), s.end(), s.begin(), ::tolower);
-        for(int it=0;it<s.size();it++){
-            if( s[it]>='a' and s[it]<='z')continue;
-            if( s[it]>='0' and s[it]<='9')continue;
-            s.erase(s.begin()+it);
-            it--;
-        }
-        int low=0,high=s.size()-1;
+    bool solve(string &s,int left,int right){
+        if(left>=right)return true;
+        if(s[left]!=s[right])return false;
+        return solve(s,left+1,right-1);
+    }
 
-        while(low<high){
-            if(s[low]==s[high]){
-                low++;
-                high--;
-            }
-            else{
-                return false;
-            }
+    bool isPalindrome(string s) {
+        int size=s.size();
+        string ans="";
+        for(auto it:s){
+            if((it>=48 && it<=57) || (it>=65 && it<=90) || (it>=97 && it<=122))ans+= tolower(it);
         }
-        return true;
+        cout<<ans;
+        return solve(ans,0,ans.size()-1);
     }
 };
