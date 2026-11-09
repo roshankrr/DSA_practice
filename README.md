@@ -16,6 +16,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/roshankrr/DSA_practice/tree/main/0001-two-sum/) | Easy |
+| [0138-copy-list-with-random-pointer](https://github.com/roshankrr/DSA_practice/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0169-majority-element](https://github.com/roshankrr/DSA_practice/tree/main/0169-majority-element/) | Easy |
 | [0451-sort-characters-by-frequency](https://github.com/roshankrr/DSA_practice/tree/main/0451-sort-characters-by-frequency/) | Medium |
 ## Divide and Conquer
@@ -74,6 +75,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/roshankrr/DSA_practice/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+| [0138-copy-list-with-random-pointer](https://github.com/roshankrr/DSA_practice/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
