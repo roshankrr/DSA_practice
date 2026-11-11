@@ -88,18 +88,22 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0100-same-tree](https://github.com/roshankrr/DSA_practice/tree/main/0100-same-tree/) | Easy |
 | [0102-binary-tree-level-order-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0100-same-tree](https://github.com/roshankrr/DSA_practice/tree/main/0100-same-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0100-same-tree](https://github.com/roshankrr/DSA_practice/tree/main/0100-same-tree/) | Easy |
 | [0102-binary-tree-level-order-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0100-same-tree](https://github.com/roshankrr/DSA_practice/tree/main/0100-same-tree/) | Easy |
 | [0102-binary-tree-level-order-traversal](https://github.com/roshankrr/DSA_practice/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 <!---LeetCode Topics End-->
